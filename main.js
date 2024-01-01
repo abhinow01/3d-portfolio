@@ -68,6 +68,40 @@ const abhinav = new THREE.Mesh(
 
 scene.add(abhinav);
 
+//moon 
+const moonTexture = new THREE.TextureLoader().load('moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moon = new THREE.Mesh(
+  new THREE.SphereGeometry(3,32,32),
+  new THREE.MeshStandardMaterial({
+    map: moonTexture,
+    normalMap: normalTexture
+  })
+)
+scene.add(moon)
+
+moon.position.z = 30;
+moon.position.setX(-10);
+
+abhinav.position.z = 30;
+abhinav.position.x =2;
+
+function moveCamera(){
+const t = document.body.getBoundingClientRect().top;
+moon.rotation.x +=0.05;
+moon.rotation.y += 0.075;
+moon.rotation.z += 0.05;
+
+abhinav.rotation.y += 0.01;
+abhinav.rotation.z += 0.01;
+
+camera.position.z = t* -0.01;
+camera.position.x = t* -0.0002;
+camera.rotation.y = t* -0.00002;
+}
+
+document.body.onscroll = moveCamera;
+
 function animate(){
   requestAnimationFrame(animate);
   torus.rotation.x +=0.01;
