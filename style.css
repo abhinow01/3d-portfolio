@@ -1,8 +1,9 @@
 @import url("https://use.typekit.net/jmk3xov.css");
 canvas{
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 40px;
+  left: 60px;
+  
 }
 :root {
   --dark-bg: rgba(15, 15, 15, 0.95);
@@ -64,4 +65,36 @@ blockquote p {
 
 .left {
   grid-column: 6 / 12;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #fff; /* Set the color to white */
+  font-size: 24px; /* Adjust the size as needed */
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Adjust the hover color as needed */
+}
+
+.project-button {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-button:hover {
+  background-color: #ffd700; /* Cream or golden color */
+  color: #000; /* Text color on hover */
+  border-color: #ffd700; /* Border color on hover */
 }

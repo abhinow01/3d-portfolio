@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/84224ced75.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Vite App</title>
   </head>
   <body>
@@ -14,6 +18,19 @@
       <header>
         <h1>Abhinav Khanna</h1>
         <p>🚀 Welcome to my website!</p>
+        <div class="social-icons">
+          <a href="https://github.com/abhinow01"
+          ><i class="fa-brands fa-square-github fa-2xl"></i
+        ></a>
+        <a href="https://twitter.com/abhinow__"
+        ><i class="fa-brands fa-square-twitter fa-2xl"></i
+      ></a>
+          <a href="https://www.linkedin.com/in/abhinav-khanna-91251b172"
+            ><i class="fa-brands fa-linkedin fa-2xl"></i
+          ></a>
+          <!-- Add more social icons as needed -->
+      </div>
+
       </header>
 
 
@@ -24,55 +41,105 @@
       <section>
         <h2>📜 Manifesto</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          I celebrate the extraordinary in a world filled with ordinary. Every project is an opportunity for purposeful craftsmanship, solving problems, evoking emotions, and making a positive impact.
         </p>
-
+      
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          I vow to continually learn, embracing challenges, and prioritizing empathy and user experience. Transparent collaboration, resilience in challenges, and impactful storytelling will be my guiding principles.
         </p>
-
+      
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          I hold the power to shape digital experiences responsibly, emphasizing ethical design and development. I am committed to giving back to the community and finding joy in the journey.
         </p>
-
       </section>
+      
 
       <section class="light">
         <h2>👩🏽‍🚀 Projects</h2>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <h2>🏆 Accomplishments</h2>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-      </section>
-
-      <blockquote>
+    
+        <div class="project">
+            <h3>Task Management Board</h3>
+            <p>
+                A React-based task management board with drag-and-drop functionality for seamless task organization. Features include automatic status updates and in-column reordering.
+            </p>
+            <div class="project-links">
+                <button class="project-button" onclick="window.open('https://github.com/abhinow01/trello-clone', '_blank')">GitHub</button>
+            </div>
+        </div>
+    
+        <div class="project">
+            <h3>Metaverse Slayer - NFT Game</h3>
+            <p>
+                Developed an NFT-based game utilizing HTML, CSS, JavaScript, Vite.js, Solidity, and Hardhat. Users can select a character, mint it as an NFT on the Sepolia network, and engage in a battle against a boss. Implemented an attack mechanism where the boss loses health based on the user's chosen character.
+            </p>
+            <div class="project-links">
+                <button class="project-button" onclick="window.open('https://nft-game-starter-project.abhinow01.repl.co/', '_blank')">Site</button>
+                <button class="project-button" onclick="window.open('https://replit.com/@abhinow01/nft-game-starter-project?v=1', '_blank')">Replit</button>
+                <button class="project-button" onclick="window.open('https://youtu.be/ua5jcaV4qb8', '_blank')">Demo Video</button>
+            </div>
+        </div>
+    
+        <div class="project">
+            <h3>AI - Art React App</h3>
+            <p>
+                Utilized Hugging Face's API to generate images based on user prompts. Currently working on publishing generated images on OpenSea as NFTs. This project aims to provide creators with an easy way to generate NFTs using prompt-based image generation. Used React.js as the framework.
+            </p>
+            <div class="project-links">
+                <button class="project-button" onclick="window.open('http://ai-art-react.vercel.app', '_blank')">Link</button>
+            </div>
+        </div>
+    </section>
+    
+    <blockquote>
         <p>The best way out is always through <br>-Robert Frost</p>
-      </blockquote>
-
-      <section class="left">
-        <h2>🌮 Work History</h2>
-
-        <h3>McDonalds</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <h3>Burger King</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <h3>Taco Bell</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-      </section>
+    </blockquote>
+    
+    <section class="left">
+        <div class="project">
+            <h3>E-Commerce React App</h3>
+            <p>
+                Created an E-Commerce site using React.js, Context API, React Router, and other technologies for smooth shopping. Features include real-time bill updates, adjustable item quantities, and simplified checkout.
+            </p>
+            <div class="project-links">
+                <button class="project-button" onclick="window.open('https://youtu.be/IFW9Y5Ox1Rg', '_blank')">Video</button>
+                <button class="project-button" onclick="window.open('https://github.com/abhinow01/totalitycorp-frontend-challenge-new/tree/main', '_blank')">GitHub</button>
+                <button class="project-button" onclick="window.open('https://frontend-ecomm-mu.vercel.app/', '_blank')">Site</button>
+            </div>
+        </div>
+    
+        <div class="project">
+            <h3>Video Analytics Web App</h3>
+            <p>
+                Built a YouTube video analytics web app using React.js, Node.js, Ethereal, Nodemailer, MUI, and Express.js. Users can submit video links for detailed performance metrics, including views, engagement, and estimated earnings.
+            </p>
+            <div class="project-links">
+                <button class="project-button" onclick="window.open('https://youtu.be/NjRe7wxpKgY', '_blank')">Video</button>
+                <button class="project-button" onclick="window.open('https://github.com/abhinow01/video_analytics', '_blank')">GitHub</button>
+            </div>
+        </div>
+    
+        <div class="project">
+            <h3>Google Docs Clone</h3>
+            <p>
+                Developed a Google Docs clone using React.js, Node.js, and Express, with real-time collaboration features enabled through Socket.IO. Integrated Quill.js for rich text editing capabilities. Employed MongoDB for efficient data management. Demonstrated proficiency in web development technologies, ensuring a responsive and collaborative application.
+            </p>
+            <div class="project-links">
+                <button class="project-button" onclick="window.open('https://github.com/abhinow01/google_docs_clone', '_blank')">GitHub</button>
+            </div>
+        </div>
+    
+        <div class="project">
+            <h3>Dukaan Payout Landing Page</h3>
+            <p>
+                Created a landing page for Dukaan Payout using React.js and Tailwind CSS. The page showcases the features and benefits of Dukaan Payout, providing users with valuable information and encouraging engagement.
+            </p>
+            <div class="project-links">
+                <button class="project-button" onclick="window.open('https://github.com/abhinow01/dukaan_payout_landing', '_blank')">GitHub</button>
+                <button class="project-button" onclick="window.open('https://dukaan-payout-landing.vercel.app/', '_blank')">Site</button>
+            </div>
+        </div>
+    </section>
+    
 
       <blockquote>
         <p>Thanks for watching!</p>
